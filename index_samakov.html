@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Samakov District</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="samakov_css/index_samakov.css" type="text/css" rel="stylesheet">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+  <!--Font Awesome JS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- Sidebar ------------------------------------------->
+
+    <nav id="sidebar">
+        <div id="dismiss">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="sidebar-header">
+            <div class="input-group">
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search" style="box-shadow: none;">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="search-link"><a href="#" class="sidebarSearch"><i class="fa fa-search text-black" aria-hidden="true"></i></a></span>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <ul class="list-unstyled components">
+            <li>
+                <a href="#womenSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><strong>WOMEN</strong></a>
+                <ul class="collapse list-unstyled" id="womenSubmenu">
+                    <li>
+                        <a href="#">Tops</a>
+                    </li>
+                    <li>
+                        <a href="#">Hoodies</a>
+                    </li>
+                    <li>
+                        <a href="#">Dresses</a>
+                    </li>
+                    <li>
+                        <a href="#">Bottoms</a>
+                    </li>
+                    <li>
+                        <a href="#">Sales</a>
+                    </li>
+                </ul>
+            </li>
+            <div class="dropdown-divider"></div>
+            <li>
+                <a href="#menSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><strong>MEN</strong></a>
+                <ul class="collapse list-unstyled" id="menSubmenu">
+                    <li>
+                        <a href="#">Tees</a>
+                    </li>
+                    <li>
+                        <a href="#">Hoodies</a>
+                    </li>
+                    <li>
+                        <a href="#">Sales</a>
+                    </li>
+                </ul>
+            </li>
+            <div class="dropdown-divider"></div>
+            <li>
+                <a href="#accesoriesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><strong>ACCESORIES</strong></a>
+                <ul class="collapse list-unstyled" id="accesoriesSubmenu">
+                    <li>
+                        <a href="#">Sunglasses</a>
+                    </li>
+                    <li>
+                        <a href="#">Beanies</a>
+                    </li>
+                    <li>
+                        <a href="#">Socks & Tights</a>
+                    </li>
+                </ul>
+            </li>
+            <div class="dropdown-divider"></div>
+            <li>
+                <a href="#" data-toggle="modal" data-target="#loginModal" id="login" class="sidebarModal"><strong>LOGIN</strong></a>
+            </li>
+            <div class="dropdown-divider"></div>
+            <li>
+                <a href="#"><i class="far fa-envelope"></i> NEWSLETTER</a>
+            </li>
+            <div class="dropdown-divider"></div>
+            <li>
+                <i class="fab fa-facebook-f fa-sidebar"></i>
+                <i class="fab fa-instagram fa-sidebar"></i>
+                <i class="fab fa-twitter fa-sidebar"></i>
+                <i class="far fa-envelope fa-sidebar"></i>
+            </li>
+        </ul>
+    </nav>
+
+<!-- Nav-Content -------------------------------------------->
+
+<div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 mb-5 bg-white rounded flex-container" style="background-color: white;">
+
+<!--Max-Width-991px------------------------------------------>
+   <div class="flex-container">
+    <div class="logo-div-2">
+      <a class="navbar-brand" href="index_samakovNew3.html"><img src="img_samakov/logo-samakov-district-1.png" id="nav-logo" right="auto" alt=""></a>
+    </div>
+    <div class="sideButton">
+      <button type="button" id="sidebarCollapse" class="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="#" data-toggle="tooltip" title="Shopping cart: Empty"><span class="badge badge-primary badge-pill" style="background-color: black; border-radius: 0px; margin-left: 10px;"><i class="fas fa-shopping-cart"></i>/0</span></a>
+    </div>
+   </div>
+
+<!--Min-Width-992px------------------------------------------>
+
+    <div class="col-md-4 col-8 logo-div">
+      <a class="navbar-brand" href="#"><img src="img_samakov/logo-samakov-district-1.png" id="nav-logo" right="auto" alt=""></a>
+    </div>
+    <div class="col-md-4 col-2 hide-btn" style="padding: 0px; font-size: 20px;">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black">
+              <strong>WOMEN</strong>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Tops</a>
+                <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Hoodies</a>
+                <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Dresses</a>
+                <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Bottoms</a>
+                <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Sales</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black">
+              <strong>MEN</strong>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Tees</a>
+                <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Hoodies</a>
+                <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Sales</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black">
+              <strong>ACCESORIES</strong>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Sunglasses</a>
+                <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Bags</a>
+                <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Beanies</a>
+                <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Socks & Tighs</a>
+                <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Beanies</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4 col-2 text-right nav-text-right">
+        <a href="#" data-toggle="modal" data-target="#loginModal" id="login"><strong>LOGIN</strong></a>
+        <form id="animatedSearch">
+            <input type="search">
+        </form>
+        <a href="#" data-toggle="tooltip" title="Shopping cart: Empty"><span class="badge badge-primary badge-pill" style="background-color: black; border-radius: 0px;"><i class="fas fa-shopping-cart"></i>/0</span></a>
+    </div>
+        <div class="modal fade" id="loginModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>LOGIN</h3>
+                        <button class="close" type="button" data-dismiss="modal">x</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                            <label for="forLogin">Username or email address*</label>
+                            <input type="text" class="form-control" id="forLogin" placeholder="">
+                            </div>
+                            <div class="form-group">
+                            <label for="forLogin">Password</label>
+                            <input type="text" class="form-control" id="forLogin2" placeholder="">
+                            </div>
+                            <button type="submit" class="btn btn-default mb-2" style="background-color: white; border: 1px solid darkgrey; border-radius: 0px">LOGIN</button>
+                            <div class="form-check" style="display: inline-block; padding-left: 40px">
+                            <input class="form-check-input" type="checkbox" value="" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">
+                            Remember me
+                            </label>
+                            </div>
+                        </form>
+                        <a href="#">Lost your password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</nav>
+</div>
+
+<!--- Page-Content --->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <img src="img_samakov/fsdds.jpg" class="img-fluid" alt="Responsive image">
+        </div>
+    </div>
+</div>
+<div class="container-fluid text-center">
+    <h4>WOMEN</h4>
+    <div class="row">
+        <div class="card-deck">
+          <div class="card">
+            <a href="#"><img class="card-img-top" id="rest_in_rebellion" src="img_samakov/rest_in_rebellion_crop_11.jpg" alt="Card image cap"></a>
+            <div class="card-body">
+              <a href="#" class="clothes"><h5 class="card-title">REST IN REBELLION CROP</h5></a>
+              <p class="card-text"><i class="fas fa-euro-sign"></i> 25.00</p>
+            </div>
+            <div class="out-of-stock-label"><h3>OUT OF STOCK</h3></div>
+            <div class="wishlist-icon">
+                <a href="#" data-toggle="tooltip" title="Add to Wishlist"><i class="fab fa-gratipay"></i></a>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#"><img class="card-img-top" src="img_samakov/14997656601626988216-571x800.jpg" alt="Card image cap"></a>
+            <div class="card-body">
+              <a href="#" class="clothes"><h5 class="card-title">WHO IS SHE SET</h5></a>
+              <p class="card-text"><i class="fas fa-euro-sign"></i> 30.00</p>
+            </div>
+            <div class="out-of-stock-label"><h3>OUT OF STOCK</h3></div>
+            <div class="wishlist-icon">
+                <a href="#" data-toggle="tooltip" title="Add to Wishlist"><i class="fab fa-gratipay"></i></a>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#"><img class="card-img-top" src="img_samakov/outlaw_top.jpg" alt="Card image cap"></a>
+            <div class="card-body">
+              <a href="#" class="clothes"><h5 class="card-title">OUTLAW TOP</h5></a>
+              <p class="card-text"><i class="fas fa-euro-sign"></i> 27.00</p>
+            </div>
+            <div class="out-of-stock-label"><h3>OUT OF STOCK</h3></div>
+            <div class="wishlist-icon">
+                <a href="#" data-toggle="tooltip" title="Add to Wishlist"><i class="fab fa-gratipay"></i></a>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#"><img class="card-img-top" src="img_samakov/15058115824213961624-1-571x800.jpg" alt="Card image cap"></a>
+            <div class="card-body">
+              <a href="#" class="clothes"><h5 class="card-title">SD SQUAT SWEAT</h5></a>
+              <p class="card-text"><i class="fas fa-euro-sign"></i> 25.00</p>
+            </div>
+            <div class="out-of-stock-label"><h3>OUT OF STOCK</h3></div>
+            <div class="wishlist-icon">
+                <a href="#" data-toggle="tooltip" title="Add to Wishlist"><i class="fab fa-gratipay"></i></a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <h4>MEN</h4>
+    <div class="row">
+        <div class="card-deck">
+          <div class="card">
+            <a href="index_samakov_tee.html"><img class="card-img-top" src="img_samakov/sd-logo-green-tee-847x1186.png" alt="Card image cap"></a>
+            <div class="card-body">
+              <a href="index_samakov_tee.html" class="clothes"><h5 class="card-title">SD Logo Green tee</h5></a>
+              <p class="card-text"><i class="fas fa-euro-sign"></i> 20.00</p>
+              <div class="wishlist-icon">
+                <a href="#" data-toggle="tooltip" title="Add to Wishlist"><i class="fab fa-gratipay"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#"><img class="card-img-top" src="img_samakov/sd-logo-maroon-tees-380x532.png" alt="Card image cap"></a>
+            <div class="card-body">
+              <a href="#" class="clothes"><h5 class="card-title">SD Logo Maroon tee</h5></a>
+              <p class="card-text"><i class="fas fa-euro-sign"></i> 20.00</p>
+            </div>
+            <div class="out-of-stock-label"><h3>OUT OF STOCK</h3></div>
+            <div class="wishlist-icon">
+                <a href="#" data-toggle="tooltip" title="Add to Wishlist"><i class="fab fa-gratipay"></i></a>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#"><img class="card-img-top" src="img_samakov/Grenade-tee.png" alt="Card image cap"></a>
+            <div class="card-body">
+              <a href="#" class="clothes"><h5 class="card-title">Grenade tee</h5></a>
+              <p class="card-text"><i class="fas fa-euro-sign"></i> 20.00</p>
+            </div>
+            <div class="out-of-stock-label"><h3>OUT OF STOCK</h3></div>
+            <div class="wishlist-icon">
+                <a href="#" data-toggle="tooltip" title="Add to Wishlist"><i class="fab fa-gratipay"></i></a>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#"><img class="card-img-top" src="img_samakov/Smoke-em-tee.png" alt="Card image cap"></a>
+            <div class="card-body">
+              <a href="#" class="clothes"><h5 class="card-title">Smoke em tee</h5></a>
+              <p class="card-text"><i class="fas fa-euro-sign"></i> 20.00</p>
+            </div>
+            <div class="out-of-stock-label"><h3>OUT OF STOCK</h3></div>
+            <div class="wishlist-icon">
+                <a href="#" data-toggle="tooltip" title="Add to Wishlist"><i class="fab fa-gratipay"></i></a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6"><img class="trela-gualia" src="img_samakov/treli-me-gualia.png" alt="treli me gualia"></div>
+        <div class="col-sm-6"><img class="trela-gualia" src="img_samakov/trela-gualia.png" alt="trela gualia"></div>
+    </div>
+</div>
+
+<footer class="container-fluid">
+    <div class="row justify-content-between">
+        <div class="col-sm-5">
+            <a href="#" class="info">ABOUT</a>
+            <a href="#" class="info">SHIPPING</a>
+            <a href="#" class="info">RETURNS</a>
+            <a href="#" class="info">CONTACT</a>
+            <a href="#" class="info">FAQ</a>
+            <a href="#" class="info">PRIVACY POLICY</a>
+            <a href="#" class="info">TERMS AND CONDITIONS</a>
+            <div class="dropdown-divider"></div>
+            <p class="copyright">Copyright 2018 <i class="far fa-copyright"></i> <strong>Samakov District</strong></p>
+            <p class="copyright">Developed by Nikos Mouratidis</p>
+        </div>
+        <div class="col-sm-3 payments">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-paypal"></i>
+            <i class="fab fa-cc-mastercard"></i>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div id="overlay"></div>
+
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $("#overlay, #dismiss").on("click", function (){
+                $("#sidebar").removeClass("active");
+                $("#overlay").removeClass("active");
+            });
+            $("#sidebarCollapse").on("click", function (){
+                $("#sidebar").addClass("active");
+                $("#overlay").addClass("active");
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+            /*$("#rest_in_rebellion").on({
+                mouseenter: function(){
+
+                    $(this).attr('src','img_samakov/RESTIN-847x1186.jpeg');
+                },
+                mouseleave: function(){
+                    $(this).attr('src','img_samakov/rest_in_rebellion_crop_11.jpg');
+                }
+            });*/
+        });
+    </script>
+</body>
+</html>

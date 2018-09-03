@@ -1,0 +1,323 @@
+/*----Navbar---*/
+
+#nav-logo{
+    width: 200px;
+    height: auto;          
+}
+.dropdown-item:active {
+    color: black;
+    background-color: gainsboro;
+}
+#login, #login a, #login a:focus, #login a:hover{
+    color: black;
+    text-decoration:none;
+    font-size: 12px;
+    padding-right:5px;          
+}
+.btnLogin {
+    background-color: gainsboro;
+}
+#animatedSearch {
+    display: inline;
+}
+#animatedSearch input[type=search] {
+    width: 20px;
+    color: transparent;
+    cursor: pointer;
+    background: white url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+    border: solid 1px #999;
+    padding: 9px 10px 9px 10px;
+          
+
+    -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    border-radius: 10em;
+
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+          
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-family: inherit;
+    font-size: 100%;
+}
+#animatedSearch input[type=search]:hover {
+    background-color: #fff;
+}
+#animatedSearch input[type=search]:focus {
+    width: 130px;
+    padding-left: 32px;
+    color: #000;
+    background-color: #fff;
+    cursor: auto;
+}
+#animatedSearch input:-moz-placeholder {
+    color: transparent;
+}
+#animatedSearch input::-webkit-input-placeholder {
+    color: transparent;
+}
+#animatedSearch input {
+    outline: none;
+}
+.navbar-nav li{
+    padding-right: 30px;
+}
+
+
+/*---Page Content---*/
+
+.path{
+    color: darkgrey;
+    font-size: 18px;
+    padding: 5px;
+}
+.path:focus, .path:hover{
+    color:black;
+    text-decoration: none;
+}
+.path-slash{
+    color: darkgrey;
+}
+.btn-next-tee{
+    background-color: black; 
+    border-radius: 20px;
+}
+.side:hover {
+    border: 1px grey;
+}
+.side {
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+    margin-top: 0px;
+    opacity:0.6
+}
+.active img, .active:hover img {
+    opacity: 1;
+    border: 2px solid #E3E2E2;
+}
+.main{
+    width: 100%;
+    height: auto;
+}
+.main-img:hover .wishlist-icon a {
+    opacity: 0.7;
+    top: 2%;    
+}
+.wishlist-icon a {
+    position: absolute;
+    right: 5%;
+    top: 0;
+    font-size: 40px;
+    color: black;
+    transition: .3s ease;
+    opacity: 0;
+}
+.wishlist-icon a:hover{    
+    color: red;
+}
+.info{
+    text-align: center;
+}
+.clothes {
+    color:black;
+}
+.clothes:hover {
+    color:red;
+    text-decoration: none;
+}
+.quantityBtns{
+    width: 110px;
+    margin-top: 20px;
+    text-align: center;
+}
+.addToCart{
+    text-align: center;
+    display: block;
+}
+#nav-tabContent{
+    margin: 30px;
+}
+#sizeChart {
+    cursor: zoom-in;
+}
+.card:hover .wishlist-icon a {
+    opacity: 0.7;
+    top: 2%;    
+}
+.out-of-stock-label {
+    background-color: white;
+    position: absolute; 
+    left: 0;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    opacity: 0.9;
+}
+footer{
+    width: 100%;
+    background-color: black;
+    padding: 15px;
+    color: white;
+}
+.info, .info a, .info a:focus, .info a:hover{
+    color: white;
+    text-decoration:none;
+    font-size: 12px;
+    padding-right:5px;          
+}
+.copyright{
+    margin-bottom: 2px;
+    font-size: 15px;
+}
+.fab{
+    font-size: 50px;
+    opacity: 0.5;
+    padding-right: 5px;
+}
+.fab:hover{
+    opacity: 1;
+}
+.sideButton, .logo-div-2{
+    display: none;
+}
+#sidebar {
+    display: none;
+}
+@media (max-width: 767px) {
+    .swaps {
+        float:left;
+        width:50%;
+        padding:8px;
+        padding-left: 0px;
+    }
+}
+@media (max-width: 860px) {
+        .wishlist-icon {
+            display: none;
+        }
+}
+@media (max-width: 991px) {
+        .hide-btn, .nav-text-right, .logo-div {
+            display: none;
+        }
+        .sideButton, .logo-div-2{
+            display: inline;            
+        }
+        #sidebar {
+            display: inline;
+        }
+        .flex-container, .logo-div-2, .sideButton {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+}
+
+/*---- SIDEBAR STYLE ----*/
+      
+      #sidebar {
+          width: 250px;
+          position: fixed;
+          top: 0;
+          left: -250px;
+          height: 100vh;
+          z-index: 999;
+          background: #f2f2f2;
+          color: #000;
+          transition: all 0.3s;
+          overflow-y: scroll;
+     }
+      #sidebar.active {
+          left: 0;
+      }
+      #overlay {
+          display: none;
+          position: fixed;
+          width: 100vw;
+          height: 100vh;
+          background: rgba(0, 0, 0, 0.7);
+          z-index: 998;
+          opacity: 0;
+          transition: all 0.5s ease-in-out;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+      }
+      #overlay.active {
+          display: block;
+          opacity: 1;
+      }
+      #sidebar .sidebar-header {
+          padding: 20px;
+          background: #f2f2f2;
+      }
+      #dismiss{
+          position: absolute;
+          top: 10px;
+          right: 15px;
+          cursor:pointer;
+      }
+      .sidebarSearch, .sidebarSearch a, .sidebarSearch a:focus, .sidebarSearch a:hover, .sidebarSearch a:active{
+          text-decoration: none;
+          color: black;
+      }
+      input .form-control {
+          border: 1px solid #555;
+          color: black;
+      }
+      .input-group {
+          padding-top: 20px;
+          padding-right: 20px;
+      }
+      #sidebar ul li a {
+          padding: 10px;
+          font-size: 1.1em;
+          color: black;
+          display: block;
+      }
+      #sidebar ul li a:hover {
+          color: black;
+          background: #f2f2f2;
+          text-decoration: none;
+      }
+      a[data-toggle="collapse"] {
+          position: relative;
+      }
+      .dropdown-toggle:after {
+          display: block;
+          position: absolute;
+          top: 50%;
+          right: 20px;
+          transform: translateY(-50%);
+      }
+      ul ul a {
+          font-size: 0.9em !important;
+          padding-left: 30px !important;
+          background: #f2f2f2;
+      }
+      #sidebar .sidebarModal {
+          color: black;
+          text-decoration:none;
+          font-size: 12px;
+          padding-right:5px;
+      }
+      .fa-euro-sign {
+          opacity: 0.8;
+      }
+      .fa-envelope {
+          padding: 7px 7px 7px 0;
+      }
+      .fa-sidebar {
+         font-size: 20px;
+          opacity: 0.5;
+          padding: 20px 5px 20px 10px;
+      }
+      .fa-sidebar:hover{
+          opacity: 1;
+      }
